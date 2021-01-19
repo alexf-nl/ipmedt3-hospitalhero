@@ -1,4 +1,4 @@
-const cursor = document.getElementById("js--scene");
+//const cursor = document.getElementById("js--scene");
 
 /*let box = document.createElement("a-box");
 box.setAttribute("width",1);
@@ -12,6 +12,6 @@ cursor.appendChild(box);
 
 // animation="property: position; to: 1 8 -10; dur: 2000; easing: linear; loop: true
 
-document.getElementById("js--marker").addEventListener("markerFound",() => {
+/*document.getElementById("js--marker").addEventListener("markerFound",() => {
   box.setAttribute("animation","property: position; to: 1 8 -10; dur: 5000; easing: linear; loop: true");
-});
+});*/
