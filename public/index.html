@@ -14,8 +14,16 @@
         <a-asset-item id="spuit" src="assets/spuit3.glb"></a-asset-item>
       </a-assets>
   <!-- use your gltf model -->
-    <a-marker id="js--marker" preset="hiro">
-      <a-entity gltf-model="#spuit"></a-entity>
+    <a-marker preset="hiro">
+      <a-box position="0 0.5 0" material="color:red;">
+      <a-animation attribute="rotation"
+      dur="3000"
+      to="360 360 0"
+      repeat="indefinite"
+      easing="linear">
+    </a-animation>
+    </a-box>
+      <!--<a-entity gltf-model="#spuit"></a-entity>-->
     </a-marker>
 
 
