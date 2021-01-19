@@ -10,11 +10,17 @@
 </head>
 <body>
   <a-scene id="js--scene" embedded arjs>
+      <a-assets>
+        <a-asset-item id="spuit" src="assets/spuit3.glb"></a-asset-item>
+      </a-assets>
+  <!-- use your gltf model -->
     <a-marker id="js--marker" preset="hiro">
-      <a-box position="0 -2 0" material="opacity: 1;" color="blue"></a-box>
+      <a-entity gltf-model="#spuit"></a-entity>
     </a-marker>
+
+
     <a-camera>
-      <a-cursor id="js--cursor" color="green"> </a-cursor>
+      <a-cursor id="js--cursor" color="yellow"> </a-cursor>
     </a-camera>
   </a-scene>
   <script src="main.js" charset="utf-8"></script>
