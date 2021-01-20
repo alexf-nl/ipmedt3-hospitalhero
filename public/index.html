@@ -9,7 +9,11 @@
   <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js" charset="utf-8"></script>
 </head>
 <body>
-  <a-scene id="js--scene" embedded arjs>
+  <a-scene embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+  renderer="logarithmicDepthBuffer: true;"
+  vr-mode-ui="enabled: false"
+  gesture-detector
+  id="scene">
       <a-assets>
       <a-asset-item id="zuster" src="zusterblederdaniek.glb"></a-asset-item>
         <a-asset-item id="bandje" src="bandje.glb"></a-asset-item>
@@ -35,7 +39,7 @@
       easing="linear">
     </a-animation>
   </a-box>-->
-  <a-entity tooninfo position="0 0 3" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>
+  <a-entity  class="clickable" gesture-handler="minScale: 0.25; maxScale: 10" tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>
     </a-marker>
 
 
@@ -43,8 +47,8 @@
       <a-cursor id="js--cursor" color="green"> </a-cursor>
     </a-camera>
   </a-scene>
-<!--  <script src="main.js" charset="utf-8"></script>
-  <script src="tooninfo.js" charset="utf-8"></script>-->
+  <script src="main.js" charset="utf-8"></script>
+<!--  <script src="tooninfo.js" charset="utf-8"></script>-->
 
 </body>
 </html>
