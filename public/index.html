@@ -11,7 +11,7 @@
 <body>
   <a-scene id="js--scene" embedded arjs>
       <a-assets>
-        <a-asset-item id="zuster" src="zusterblederdaniek.glb"></a-asset-item>
+      <!--  <a-asset-item id="zuster" src="zusterblederdaniek.glb"></a-asset-item>-->
         <a-asset-item id="bandje" src="bandje.glb"></a-asset-item>
         <a-asset-item id="spuit" src="spuit.glb"></a-asset-item>
         <a-asset-item id="giraffe" src="giraffe.glb"></a-asset-item>
@@ -19,10 +19,11 @@
       </a-assets>
 
       <!--test toevoegen met js/tooninfo.js-->
-      <a-entity tooninfo position="0 0.5 0" id="js--item" gltf-model="#zuster" scale=".05 .05 .05"></a-entity>
-      <a-entity tooninfo position="3 0.5 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>
-      <a-entity tooninfo position="6 0.5 0" id="js--spuit" gltf-model="#spuit" scale="2 2 2"></a-entity>
-      <a-entity tooninfo position="9 0.5 0" id="js--giraffe" gltf-model="#giraffe" scale="3 3 3"></a-entity>
+      <!--zuster moet gefixt worden qua blender model-->
+      <!--<a-entity tooninfo position="0 0.5 0" id="js--zuster" gltf-model="#zuster" scale=".02 .02 .02"></a-entity>-->
+      <a-entity tooninfo position="1 0.5 0" id="js--bandje" gltf-model="#bandje" scale=".03 .03 .03"></a-entity>
+      <a-entity tooninfo position="0 0.5 0" id="js--spuit" gltf-model="#spuit" scale=".03 .03 .03"></a-entity>
+      <a-entity tooninfo position="2 0.5 0" id="js--giraffe" gltf-model="#giraffe" scale="0.2 0.2 0.2"></a-entity>
 
   <!-- use your gltf model -->
     <a-marker preset="hiro">
