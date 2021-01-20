@@ -21,6 +21,8 @@
         <a-asset-item id="bandje" src="bandje.glb"></a-asset-item>
         <a-asset-item id="spuit" src="spuit.glb"></a-asset-item>
         <a-asset-item id="giraffe" src="giraffe.glb"></a-asset-item>
+        <img id="bandjeText" src="img/bandje.png">
+
 
       </a-assets>
 
@@ -30,6 +32,7 @@
     <!--  <a-entity tooninfo position="1 3 0" id="js--bandje" gltf-model="#bandje" scale="2 3 2"></a-entity>-->
       <!--<a-entity tooninfo position="0 2 0" id="js--spuit" gltf-model="#spuit" scale="3 3 3"></a-entity>
       <a-entity tooninfo position="2 1 0" id="js--giraffe" gltf-model="#giraffe" scale="2 2 2"></a-entity>-->
+
 
   <!-- use your gltf model -->
     <a-marker preset="hiro">
@@ -41,7 +44,10 @@
       easing="linear">
     </a-animation>
   </a-box>-->
+  <!--<a-entity  class="clickable" gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>-->
+  <a-image src="#bandjeText" position="0 3 0"></a-image>
   <a-entity  class="clickable" gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>
+
     </a-marker>
 
 
