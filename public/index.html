@@ -36,20 +36,24 @@
 
   <!-- use your gltf model -->
     <a-marker preset="hiro">
-    <!--  <a-box position="0 0.5 0" material="color:red;">
-      <a-animation attribute="rotation"
-      dur="3000"
-      to="360 360 0"
-      repeat="indefinite"
-      easing="linear">
-    </a-animation>
-  </a-box>-->
-  <!--<a-entity  class="clickable" gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>-->
-  <a-image src="#bandjeText" position="0 3 0"></a-image>
-  <a-entity  class="clickable" gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>
+          <!--  <a-box position="0 0.5 0" material="color:red;">
+            <a-animation attribute="rotation"
+            dur="3000"
+            to="360 360 0"
+            repeat="indefinite"
+            easing="linear">
+          </a-animation>
+        </a-box>-->
+        <!--<a-entity  class="clickable" gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>-->
+        <a-image src="#bandjeText" position="0 3 0"></a-image>
+        <a-entity  class="clickable" gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>
 
     </a-marker>
 
+  <a-marker type="pattern" patternUrl="pattern-giraffe-lukas-holas.ptt">
+    <a-image src="#bandjeText" position="0 3 0"></a-image>
+
+  </a-marker>
 
     <a-camera>
       <a-cursor id="js--cursor" color="green"> </a-cursor>
