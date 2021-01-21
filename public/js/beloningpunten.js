@@ -10,6 +10,7 @@ AFRAME.registerComponent("beloningpunten", {
   this.ontvangBeloning = function() {
       for(let i = 0; i < beloningen.length; i++) {
       console.log('overheen gaan werkt');
+      punten += 1;
       punten1.setAttribute("value", "Aantal punten ontvangen: " + punten);
       }
     }
@@ -19,7 +20,6 @@ AFRAME.registerComponent("beloningpunten", {
   update:function(){
     this.ontvangBeloning();
     punten += 1;
-
 
   },
   tick:function(){},
