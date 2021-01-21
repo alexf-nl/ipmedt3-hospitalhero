@@ -14,7 +14,7 @@ AFRAME.registerComponent("beloningpunten", {
       punten1.setAttribute("value", "Aantal punten ontvangen: " + punten);
       }
     }
-  this.el.addEventListener("click", this.ontvangBeloning);
+  this.el.addEventListener("mouseenter", this.ontvangBeloning);
 
   },
   update:function(){
