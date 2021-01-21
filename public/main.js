@@ -51,10 +51,13 @@ console.log('hi');
 
 sceneEl.addEventListener("markerFound", (e) => {
     isMarkerVisible = true;
+    console.log(isMarkerVisible);
+
 });
 
 sceneEl.addEventListener("markerLost", (e) => {
     isMarkerVisible = false;
+    console.log(isMarkerVisible);
 });
 
 
