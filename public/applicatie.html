@@ -33,9 +33,11 @@
       <!--<a-entity tooninfo position="0 2 0" id="js--spuit" gltf-model="#spuit" scale="3 3 3"></a-entity>
       <a-entity tooninfo position="2 1 0" id="js--giraffe" gltf-model="#giraffe" scale="2 2 2"></a-entity>-->
 
-      <a-entity beloning position="2 1 0" class="item" id="js--giraffe" gltf-model="#giraffe" scale="2 2 2"></a-entity>
-      <a-text beloningpunten id="js--punten" value="Hello, World!" color="black"></a-text>
+    <!--  <a-entity beloning position="2 1 0" class="item" id="js--giraffe" gltf-model="#giraffe" scale="2 2 2"></a-entity>
+      <a-text beloningpunten id="js--punten" value="Hello, World!" color="black"></a-text>-->
   <!-- use your gltf model -->
+
+
     <a-marker preset="hiro">
           <!--  <a-box position="0 0.5 0" material="color:red;">
             <a-animation attribute="rotation"
@@ -50,6 +52,12 @@
 
     </a-marker>
 
+    <!-- giraffe-->
+    <a-marker type="pattern" patternUrl="giraffe.patt">
+
+      <a-entity position="0 0 0" class="item" id="js--giraffe" gltf-model="#giraffe" scale="2 2 2"></a-entity>
+
+    </a-marker>
     <a-marker preset='markers/kanji'>
   <!--    <a-image src="#bandjeText" position="0 8 0"></a-image>-->
     </a-marker>
