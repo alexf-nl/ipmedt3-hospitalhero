@@ -37,8 +37,9 @@
       <a-text beloningpunten id="js--punten" value="Hello, World!" color="black"></a-text>-->
   <!-- use your gltf model -->
 
+  <!-- stuwband -->
 
-    <a-marker preset="hiro">
+    <a-marker type="pattern" url="stuwband.patt">
           <!--  <a-box position="0 0.5 0" material="color:red;">
             <a-animation attribute="rotation"
             dur="3000"
@@ -53,16 +54,16 @@
     </a-marker>
 
     <!-- giraffe-->
-    <a-marker type="pattern" url="marker1.patt">
+    <a-marker type="pattern" url="giraffe.patt">
 
-      <a-entity class="clickable" gesture-handler position="0 0 0" class="item" id="js--giraffe" gltf-model="#giraffe" scale="1 1 1"></a-entity>
+      <a-entity class="clickable" gesture-handler position="0 0 0" class="item" id="js--giraffe" gltf-model="#giraffe" scale="2 2 2"></a-entity>
 
     </a-marker>
 
-    <!-- spuit-->
-    <a-marker type="pattern" url="giraffe.patt">
+    <!-- prik spuit-->
+    <a-marker type="pattern" url="stuwband.patt">
 
-      <a-entity class="clickable" gesture-handler position="0 0 0" class="item" id="js--spuit" gltf-model="#spuit" scale="1 1 1"></a-entity>
+      <a-entity class="clickable" gesture-handler position="0 0 0" class="item" id="js--spuit" gltf-model="#spuit" scale="2 2 2"></a-entity>
 
     </a-marker>
 
