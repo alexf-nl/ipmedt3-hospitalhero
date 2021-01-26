@@ -32,7 +32,7 @@
     for (let i = 0; i < pickups.length; i++) {
       pickups[i].addEventListener('click', function(evt){
         if (hold == null) {
-          camera.innerHTML += '<a-sphere  class = "js--pickup js--interact" position = "0 1.25 -4" color= "#EF2D5E" radius="1.25" animation="property: rotation; fill:fowards; dur: 10000; to: 0 0 -180; repeat: indefinite; loop: true; dir: alternate; easing: linear"> <a-sphere   class = "js--pickup js--interact" position = "-0.4 0.3 1.05" color= "#FFFFFFaw" radius="0.25"></a-sphere><a-sphere   class = "js--pickup js--interact" position = "0.4 0.3 1.05" color= "#FFFFFFaw" radius="0.25"></a-sphere><a-cylinder class = "js--pickup js--interact" position="0 -0.2 0.8" radius="0.5" height="0.25" color="#FFC65D"> </a-cylinder></a-sphere>'
+          camera.innerHTML += '  <a-entity   class = "js--pickup js--interact" class="clickable"  gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>'
           hold = "box";
           this.remove();
       }
