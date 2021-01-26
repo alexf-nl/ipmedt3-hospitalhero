@@ -13,7 +13,8 @@
     AFRAME.registerComponent('clickhandler', {
         init: function() {
             this.el.addEventListener('click', () => {
-                alert('Clicked!')
+                alert('Je heeft dit object verzameld!')
+                this.remove();
             });
     }});
   </script>
@@ -67,14 +68,14 @@
     <!-- giraffe-->
     <a-marker type="pattern" url="giraffe.patt">
 
-      <a-entity class="clickable" gesture-handler position="0 0 0" class="item" id="js--giraffe" gltf-model="#giraffe" scale="2 2 2"></a-entity>
+      <a-entity clickhandler class="clickable" gesture-handler position="0 0 0" class="item" id="js--giraffe" gltf-model="#giraffe" scale="2 2 2"></a-entity>
 
     </a-marker>
 
     <!-- prik spuit-->
     <a-marker type="pattern" url="prik.patt">
 
-      <a-entity class="clickable" gesture-handler position="0 0 0" class="item" id="js--spuit" gltf-model="#spuit" scale="2 2 2"></a-entity>
+      <a-entity clickhandler class="clickable" gesture-handler position="0 0 0" class="item" id="js--spuit" gltf-model="#spuit" scale="2 2 2"></a-entity>
 
     </a-marker>
 
