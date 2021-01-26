@@ -17,6 +17,18 @@
             });
     }});
   </script>
+  <script>
+  let pickups = document.getElementsByClassName('js--pickup');
+  let hold = null;
+
+  for (let i = 0; i < pickups.length; i++) {
+    pickups[i].addEventListener('click', function(evt){
+      if (hold == null) {
+      this.remove();
+    }
+    });
+  }
+  </script>
 
 </head>
 <body>
@@ -60,7 +72,7 @@
           </a-animation>
         </a-box>-->
         <!--<a-entity  class="clickable" gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>-->
-        <a-entity  clickhandler class="clickable"  gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>
+        <a-entity   class = "js--pickup js" class="clickable"  gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>
 
     </a-marker>
 
