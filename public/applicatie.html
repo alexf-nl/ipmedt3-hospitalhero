@@ -23,7 +23,7 @@
 <body>
 
 
-  <a-scene style="position: fixed; width:100%; height: 100vh;" embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+  <a-scene embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
   renderer="logarithmicDepthBuffer: true;"
   vr-mode-ui="enabled: false"
   gesture-detector
@@ -99,7 +99,7 @@
     </a-camera>
   </a-scene>
 
-  <div style="width: 100%; height:300px; position: absolute; bottom: 0;">
+  <div style="width: 100%; height:300px; position: fixed; bottom: 0;">
         <div style="height:100%; width: 40%; float: right;" ><img style="height:100%;" src="img/girraf.png"></div>
         <div style="height:100%; width: 60%; float: left;" ></div>
   </div>
