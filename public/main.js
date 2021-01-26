@@ -51,12 +51,17 @@ console.log('hi');
 
 sceneEl.addEventListener("markerFound", (e) => {
     isMarkerVisible = true;
+    console.log(isMarkerVisible);
+
 });
 
 sceneEl.addEventListener("markerLost", (e) => {
     isMarkerVisible = false;
+    console.log(isMarkerVisible);
 });
 
+
+//alex f - functie om een blender model te kunnen roteren en schalen binnen AR
 
 handleScale(event) {
     if (isMarkerVisible) {

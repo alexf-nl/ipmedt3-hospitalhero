@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>AR demo </title>
+  <script src="https://aframe.io/releases/1.1.0/aframe.min.js"></script>
+  <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js" charset="utf-8"></script>
+  <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
+
+</head>
+<body>
+
+
+  <a-scene embedded arjs="trackingMethod: best; sourceType: webcam; debugUIEnabled: false;"
+  renderer="logarithmicDepthBuffer: true;"
+  vr-mode-ui="enabled: false"
+  gesture-detector
+  id="scene">
+      <a-assets>
+        <a-asset-item id="zuster" src="models/zusterblederdaniek.glb"></a-asset-item>
+        <a-asset-item id="bandje" src="models/bandje.glb"></a-asset-item>
+        <a-asset-item id="spuit" src="models/spuit.glb"></a-asset-item>
+        <a-asset-item id="giraffe" src="models/giraffe.glb"></a-asset-item>
+      <img id="bandjeText" src="img/bandje.png">
+
+
+      </a-assets>
+
+      <!--test toevoegen met js/tooninfo.js-->
+      <!--zuster moet gefixt worden qua blender model-->
+    <!--<a-entity tooninfo position="0 0.5 0" id="js--zuster" gltf-model="#zuster" scale=".02 .02 .02"></a-entity>-->
+    <!--  <a-entity tooninfo position="1 3 0" id="js--bandje" gltf-model="#bandje" scale="2 3 2"></a-entity>-->
+      <!--<a-entity tooninfo position="0 2 0" id="js--spuit" gltf-model="#spuit" scale="3 3 3"></a-entity>
+      <a-entity tooninfo position="2 1 0" id="js--giraffe" gltf-model="#giraffe" scale="2 2 2"></a-entity>-->
+
+    <!--  <a-entity beloning position="2 1 0" class="item" id="js--giraffe" gltf-model="#giraffe" scale="2 2 2"></a-entity>
+      <a-text beloningpunten id="js--punten" value="Hello, World!" color="black"></a-text>-->
+  <!-- use your gltf model -->
+
+  <!-- stuwband -->
+
+    <a-marker type="pattern" url="stuwband.patt">
+          <!--  <a-box position="0 0.5 0" material="color:red;">
+            <a-animation attribute="rotation"
+            dur="3000"
+            to="360 360 0"
+            repeat="indefinite"
+            easing="linear">
+          </a-animation>
+        </a-box>-->
+        <!--<a-entity  class="clickable" gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>-->
+        <a-entity  class="clickable" gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>
+
+    </a-marker>
+
+    <!-- giraffe-->
+    <a-marker type="pattern" url="giraffe.patt">
+
+      <a-entity class="clickable" gesture-handler position="0 0 0" class="item" id="js--giraffe" gltf-model="#giraffe" scale="2 2 2"></a-entity>
+
+    </a-marker>
+
+    <!-- prik spuit-->
+    <a-marker type="pattern" url="prik.patt">
+
+      <a-entity class="clickable" gesture-handler position="0 0 0" class="item" id="js--spuit" gltf-model="#spuit" scale="2 2 2"></a-entity>
+
+    </a-marker>
+
+
+<!--
+    <a-marker preset='markers/kanji'>
+     <a-image src="#bandjeText" position="0 8 0"></a-image>
+</a-marker
+
+
+    <a-marker type="pattern" patternUrl="pattern-giraffe-lukas-holas.patt">
+      <a-image src="#bandjeText" position="0 3 0"></a-image>
+
+    </a-marker>
+  -->
+
+    <a-camera>
+      <div style="width: 25%; height:60%; background-color: #000; float:right;"></div>
+      <a-cursor id="js--cursor" color="green"> </a-cursor>
+    </a-camera>
+  </a-scene>
+  <script src="main.js" charset="utf-8"></script>
+  <script src="js/beloningpunten.js" charset="utf-8"></script>
+
+<!--  <script src="tooninfo.js" charset="utf-8"></script>-->
+
+</body>
+</html>
