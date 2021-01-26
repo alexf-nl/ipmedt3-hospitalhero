@@ -1,28 +1,38 @@
-window.onload = () =>{
-  const places = document.getElementsByClassName('js--place');
-  const camera = document.getElementById('js--camera');
+AFRAME.registerComponent('accepts-clicks', {
+  init: function() {
+    this.el.addEventListener('touchend', handleClickEvent);
+    this.el.addEventListener('click', handleClickEvent);
+  },
+  tick: function() {
+    hideSpeechBubbleIfNoMarker();
+  }
+});
 
-  let pickups = document.getElementsByClassName('js--pickup');
 
 
-  for (let i = 0; i < pickups.length; i++) {
-    pickups[i].addEventListener('click', function(evt){
-      if (hold == null) {
-      hold = "box";
-      this.remove();
+function handleClickEvent() {
+  for (var i = 0; i < builders.length; i++) {
+    var builder = builders[i];
+    var builderMarker = document.querySelector("#" + builder.name + "-marker");
+    if (builderMarker && builderMarker.object3D.visible) {
+      if (searchForBuilderTool(builder)) {
+        toggleSpeechBubble(builder.successDialogue);
+      } else {
+        toggleSpeechBubble(builder.dialogue);
+      }
+      break;
     }
-    });
   }
+}
 
-
-  for (let i = 0; i < places.length; i++) {
-    places[i].addEventListener('click', function(evt){
-      let att = document.createAttribute("animation");
-      att.value = "property: position; easing: linear; dur: 2000; to: "
-      + this.getAttribute('position').x + " 1.6 "
-      + this.getAttribute('position').z;
-      camera.setAttribute('animation', att.value);
-  });
+function hideSpeechBubbleIfNoMarker() {
+  var shouldHide = true;
+  for (var i = 0; i < builders.length; i++) {
+    var builderMarker = document.querySelector("#" + builders[i].name + "-marker");
+    if (builderMarker && builderMarker.object3D.visible) {
+      shouldHide = false;
+      break;
+    }
   }
-
-  };
+  // hide speech bubble
+};
