@@ -18,16 +18,60 @@
     }});
   </script>
   <script>
-  let pickups = document.getElementsByClassName('js--pickup');
-  let hold = null;
+  window.onload = () =>{
+    const places = document.getElementsByClassName('js--place');
+    const camera = document.getElementById('js--camera');
 
-  for (let i = 0; i < pickups.length; i++) {
-    pickups[i].addEventListener('click', function(evt){
-      if (hold == null) {
-      this.remove();
+    let pickups = document.getElementsByClassName('js--pickup');
+    let hold = null;
+
+    const placeholders = document.getElementsByClassName('js--placeholder');
+    let scene = document.getElementById('js--scene');
+
+  function addListeners() {
+    for (let i = 0; i < pickups.length; i++) {
+      pickups[i].addEventListener('click', function(evt){
+        if (hold == null) {
+        camera.innerHTML += '<a-sphere  class = "js--pickup js--interact" position = "0 1.25 -4" color= "#EF2D5E" radius="1.25" animation="property: rotation; fill:fowards; dur: 10000; to: 0 0 -180; repeat: indefinite; loop: true; dir: alternate; easing: linear"> <a-sphere   class = "js--pickup js--interact" position = "-0.4 0.3 1.05" color= "#FFFFFFaw" radius="0.25"></a-sphere><a-sphere   class = "js--pickup js--interact" position = "0.4 0.3 1.05" color= "#FFFFFFaw" radius="0.25"></a-sphere><a-cylinder class = "js--pickup js--interact" position="0 -0.2 0.8" radius="0.5" height="0.25" color="#FFC65D"> </a-cylinder></a-sphere>'
+        hold = "box";
+        this.remove();
+      }
+      });
     }
-    });
   }
+
+  addListeners();
+
+    for (let i = 0; i < placeholders.length; i++) {
+      placeholders[i].addEventListener('click', function(evt){
+        if (hold == "box"){
+          let box = document.createElement('a-box');
+          box.setAttribute("class", "js--pickup js--interact");
+          box.setAttribute("color", "green");
+          box.setAttribute("position", {x: this.getAttribute('position').x, y:"0.5",
+          z:this.getAttribute('position').z});
+          scene.appendChild(box);
+          document.getElementById("js--hold").remove();
+          addListeners();
+          hold = null;
+        }
+      });
+    }
+
+
+
+    for (let i = 0; i < places.length; i++) {
+      places[i].addEventListener('click', function(evt){
+        let att = document.createAttribute("animation");
+        att.value = "property: position; easing: linear; dur: 2000; to: "
+        + this.getAttribute('position').x + " 1.6 "
+        + this.getAttribute('position').z;
+        camera.setAttribute('animation', att.value);
+    });
+    }
+
+    };
+
   </script>
 
 </head>
@@ -72,7 +116,7 @@
           </a-animation>
         </a-box>-->
         <!--<a-entity  class="clickable" gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>-->
-        <a-entity   class = "js--pickup js" class="clickable"  gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>
+        <a-entity   class = "js--pickup js--interact" class="clickable"  gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>
 
     </a-marker>
 
@@ -107,6 +151,19 @@
       <!-- <div style="width: 20%; height:300px; background-color: #fff; position: absolute; top:0; right:0;"></div> -->
 
       <a-cursor id="js--cursor" color="green"> </a-cursor>
+      <a-entity
+        animation__click="property: scale; startEvents: click; easing: easeInCubic; dur: 150;
+        from: 0.1 0.1 0.1; to: 1 1 1"
+        animation__fusing="property: scale; startEvents: fusing; easing: easeInCubic; dur: 2000;
+        from: 1 1 1; to: 0.1 0.1 0.1"
+        animation="property: scale; startEvents: mouseleave; easing: easeInCubic; dur: 500;
+        to: 1 1 1"
+        cursor = "fuse: true; fuseTimeout: 2000 "
+        material = "color: black; shader: flat"
+        geometry = "primitive: ring; radiusInner: 0.007; radiusOuter: 0.01"
+        position = "0 0 -0.5"
+        raycaster = "objects: .js--interact"
+      ></a-entity>
     </a-camera>
   </a-scene>
 
