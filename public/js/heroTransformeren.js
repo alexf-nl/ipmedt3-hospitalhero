@@ -13,7 +13,7 @@ AFRAME.registerComponent("transformeren", {
         let entity = this.el;
         alert('Superheld giraaf komt eraan!');
         entity.parentNode.removeChild(entity);
-        camera.innerHTML += '<a-entity class="clickable" gesture-handler position="0 0 0" class="item" id="js--supergiraffe" gltf-model="#supergiraffe" scale="1 1 1"></a-entity>';
+        camera.innerHTML += '<a-entity class="clickable" gesture-handler position="0 0 0" class="item" id="js--supergiraffe" gltf-model="#supergiraffe" scale=".5 .5 .5"></a-entity>';
       });
 
   },
