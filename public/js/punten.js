@@ -9,10 +9,14 @@ window.onload = () =>{
   const placeholders = document.getElementsByClassName('js--placeholder');
   let scene = document.getElementById('js--scene');
 
+
+
+
+
   document.getElementById("js--bandje").addEventListener("click", bandjealert);
 
   function bandjealert(){
-    alert('BADNJE Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
+    alert('BADNJE Je heeft dit object verzameld! Dit is object van de 4!")
   }
 
 
