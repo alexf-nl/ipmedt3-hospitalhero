@@ -9,25 +9,32 @@ window.onload = () =>{
   const placeholders = document.getElementsByClassName('js--placeholder');
   let scene = document.getElementById('js--scene');
 
-function addListeners() {
-  for (let i = 0; i < pickups.length; i++) {
-    pickups[i].addEventListener('click', function(evt){
-      if (hold == 1) {
-          alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
-          document.getElementById('js--bandje').remove();
-      }
-      if (hold == 2) {
-          alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
-          document.getElementById('js--spuit').remove();
-      }
-      if (hold == 3) {
-          alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
-          this.remove();
-      }
-      hold = hold + 1
-    });
+  document.getElementById("js--bandje").addEventListener("click", bandjealert);
+
+    alert('BADNJE Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
   }
-}
+
+
+//functie die luistert naar pickups en geeft melding.
+// function addListeners() {
+//   for (let i = 0; i < pickups.length; i++) {
+//     pickups[i].addEventListener('click', function(evt){
+//       if (hold == 1) {
+//           alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
+//           document.getElementById('js--bandje').remove();
+//       }
+//       if (hold == 2) {
+//           alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
+//           document.getElementById('js--spuit').remove();
+//       }
+//       if (hold == 3) {
+//           alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
+//           this.remove();
+//       }
+//       hold = hold + 1
+//     });
+//   }
+// }
 
 addListeners();
 
@@ -42,7 +49,7 @@ addListeners();
         scene.appendChild(box);
         document.getElementById("js--hold").remove();
         addListeners();
-        hold = null;
+
       }
     });
   }
