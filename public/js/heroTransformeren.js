@@ -12,11 +12,12 @@ AFRAME.registerComponent("transformeren", {
   update:function(){
     this.el.addEventListener('click', () => {
         let entity = this.el;
-        entity.parentNode.removeChild(giraffe);
         //entity.parentNode.removeChild(entity);
         alert('Superheld giraaf komt eraan!');
-        entity.parentNode.appendChild(superHero);
-      //  entity.parentNode.setAttribute('gltf-model', '#supergiraffe');
+        entity.parentNode.removeChild(entity);
+        entity.parentNode.setAttribute('gltf-model', '#supergiraffe');
+        entity.parentNode.appendChild(entity);
+        //test
 
       //  element = '<a-entity class="clickable" gesture-handler position="0 0 0" class="item" id="js--supergiraffe" gltf-model="#supergiraffe" scale="1 1 1"></a-entity>';
       //  element.appendChild(element);
