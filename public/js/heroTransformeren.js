@@ -3,7 +3,6 @@
 console.log('hero transformeren');
 
 const camera = document.getElementById('js--camera');
-
 AFRAME.registerComponent("transformeren", {
   init:function() {
     const giraffe = document.getElementById('js--giraffe');
