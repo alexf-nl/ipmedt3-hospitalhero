@@ -25,7 +25,7 @@
     for (let i = 0; i < pickups.length; i++) {
       pickups[i].addEventListener('click', function(evt){
         if (hold == null) {
-          hold = "box";
+          hold += 1;
           this.remove();
             alert('Je heeft dit object verzameld! Dit is object' + hold + "van de 4!")
       }
