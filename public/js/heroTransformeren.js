@@ -10,8 +10,10 @@ AFRAME.registerComponent("transformeren", {
   update:function(){
     this.el.addEventListener('click', () => {
         let entity = this.el;
-        alert('Hero verwijderen werkt');
+        alert('Superheld giraaf komt eraan!');
         entity.parentNode.removeChild(entity);
+        alert('Super giraffe is toegevoegd!');
+        camera.innerHTML += '<a-entity transformeren class="clickable" gesture-handler position="0 0 0" class="item" id="js--giraffe" gltf-model="#supergiraffe" scale="2 2 2"></a-entity>';
       });
 
   },
