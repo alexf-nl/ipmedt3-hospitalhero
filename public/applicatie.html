@@ -25,7 +25,7 @@
     for (let i = 0; i < pickups.length; i++) {
       pickups[i].addEventListener('click', function(evt){
         if (hold == null) {
-          camera.innerHTML += '  <a-entity  class = "js--pickup js--interact" position = "0 0 -8"  gltf-model="#giraffe"> </a-entity>'
+          camera.innerHTML += '  <a-entity  class = "js--pickup js--interact" position = "0 1.25 -4"  gltf-model="#giraffe"> </a-entity>'
           hold += 1;
           this.remove();
             alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
@@ -88,7 +88,6 @@
 
 
       </a-assets>
-      <a-entity transformeren class="clickable" gesture-handler position="0 1 3" class="item" id="js--giraffe1" gltf-model="#supergiraffe" scale="1 1 1"></a-entity>
 
 
       <!--test toevoegen met js/tooninfo.js-->
@@ -136,7 +135,7 @@
 
     <!--super hero -->
     <a-marker type="pattern" url="markers/pattern-superhero.patt">
-      <a-entity transformeren class="clickable" gesture-handler position="0 0 0" class="item" id="js--giraffe" gltf-model="#supergiraffe" scale="0.5 0.5 0.5"></a-entity>
+      <a-entity transformeren class="clickable" gesture-handler position="0 0 0" class="item" id="js--giraffe" gltf-model="#giraffe" scale="1 1 1"></a-entity>
     </a-marker>
 
 
