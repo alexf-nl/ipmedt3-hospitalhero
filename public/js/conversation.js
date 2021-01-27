@@ -1,4 +1,4 @@
-
+document.getElementById("dialoog").addEventListener("click", volgendetext);
 
 function volgendetext() {
   con bericht = 0
