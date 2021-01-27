@@ -17,7 +17,7 @@ function volgendetext() {
   document.getElementById("dialoog").src = "../img/dialoog2.png";
   while (collect_bandje == 0){
     alert("we zijn nu in de while loop");
-    break
+    break;
   }
   if (bericht == 1) {
     document.getElementById("dialoog").src = "../img/dialoog3.png";
