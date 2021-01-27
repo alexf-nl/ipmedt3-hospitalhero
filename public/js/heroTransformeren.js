@@ -8,14 +8,14 @@ AFRAME.registerComponent("transformeren", {
     const superHero = document.getElementById('js--superHero');
 },
   update:function(){
-  },
-  tick:function(){
     this.el.addEventListener('click', () => {
         let entity = this.el;
         alert('Hero verwijderen werkt');
         entity.parentNode.removeChild(entity);
       });
 
+  },
+  tick:function(){
   },
   pause:function(){},
   play:function(){}
