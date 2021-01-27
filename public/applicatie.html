@@ -32,7 +32,6 @@
     for (let i = 0; i < pickups.length; i++) {
       pickups[i].addEventListener('click', function(evt){
         if (hold == null) {
-          camera.innerHTML += '  <a-entity   class = "js--pickup js--interact" class="clickable"  gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="0.3 0.3 0.3"></a-entity>'
           hold = "box";
           this.remove();
       }
