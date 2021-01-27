@@ -18,7 +18,7 @@ window.onload = () =>{
 
   function bandjealert(){
     alert('BADNJE Je heeft dit object verzameld! Dit is object van de 4!")
-    document.getElementById('js--bandje').remove();
+    
   }
 
 
