@@ -14,11 +14,10 @@ AFRAME.registerComponent("transformeren", {
         let entity = this.el;
         entity.parentNode.removeChild(entity);
         alert('Superheld giraaf komt eraan!');
-        let sceneEl = document.querySelector('a-scene');
-        //let entityEl = document.createElement('a-entity');
-        const superHeroGiraffe = sceneEl.querySelector('#js--superHero');
-        let entity1 = '<a-entity class="clickable" gesture-handler position="0 0 0" class="item" id="js--supergiraffe" gltf-model="#supergiraffe" scale=".5 .5 .5"></a-entity>';
-        sceneEl.appendChild(superHeroGiraffe);
+        element = '<a-entity class="clickable" gesture-handler position="0 0 0" class="item" id="js--supergiraffe" gltf-model="#supergiraffe" scale="1 1 1"></a-entity>';
+        element.appendChild(element);
+        element.parentNode.appendChild(element);
+
       });
 
   },
