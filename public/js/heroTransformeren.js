@@ -11,10 +11,10 @@ AFRAME.registerComponent("transformeren", {
 //    entity1.removeChild(entity1);
 },
   update:function(){
-    
+
     this.el.addEventListener('click', () => {
         let entity = this.el;
-        entity.parentNode.setAttribute('gltf-model', '-');
+        entity.parentNode.removeAttribute('gltf-model');
         //entity.parentNode.removeChild(entity);
         alert('Superheld giraaf komt eraan!');
       //  entity.parentNode.removeChild(entity);
