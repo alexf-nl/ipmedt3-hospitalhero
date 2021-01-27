@@ -1,13 +1,13 @@
 window.onload = () =>{
-  const places = document.getElementsByClassName('js--place');
-  const camera = document.getElementById('js--camera');
-
-
-  let pickups = document.getElementsByClassName('js--pickup');
-  let hold = 1;
-
-  const placeholders = document.getElementsByClassName('js--placeholder');
-  let scene = document.getElementById('js--scene');
+  // const places = document.getElementsByClassName('js--place');
+  // const camera = document.getElementById('js--camera');
+  //
+  //
+  // let pickups = document.getElementsByClassName('js--pickup');
+  // let hold = 1;
+  //
+  // const placeholders = document.getElementsByClassName('js--placeholder');
+  // let scene = document.getElementById('js--scene');
 
 
 
@@ -19,7 +19,6 @@ window.onload = () =>{
   function bandjealert(){
     alert("Hello! I am an alert box!!");
     document.getElementById('js--bandje').remove();
-
   }
 
 
