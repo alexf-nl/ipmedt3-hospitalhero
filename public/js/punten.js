@@ -11,6 +11,7 @@ window.onload = () =>{
 
   document.getElementById("js--bandje").addEventListener("click", bandjealert);
 
+  function bandjealert(){
     alert('BADNJE Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
   }
 
