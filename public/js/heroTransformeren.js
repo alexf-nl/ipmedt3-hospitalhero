@@ -6,6 +6,7 @@ console.log('hero transformeren');
 
 AFRAME.registerComponent("transformeren", {
   init:function() {
+    var lantern = document.getElementById('lantern');
     const giraffe = document.getElementById('js--giraffe');
     giraffe.setAttribute('gltf-model', '');
     const superHero = document.getElementById('js--supergiraffe');
@@ -17,8 +18,9 @@ AFRAME.registerComponent("transformeren", {
         let entity = this.el;
         //entity.parentNode.removeChild(entity);
         alert('Superheld giraaf komt eraan!');
-      //  entity.parentNode.removeChild(entity);
-        entity.parentNode.setAttribute('gltf-model', '#supergiraffe');
+        entity.parentNode.removeChild(entity);
+        lantern.setAttribute('gltf-model', '#supergiraffe');
+        //entity.parentNode.setAttribute('gltf-model', '#supergiraffe');
       //  entity1.parentNode.appendChild(entity1);
         //test
 
