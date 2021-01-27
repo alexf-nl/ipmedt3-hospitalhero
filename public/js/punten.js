@@ -1,4 +1,4 @@
-window.onload = () =>{
+// window.onload = () =>{
   // const places = document.getElementsByClassName('js--place');
   // const camera = document.getElementById('js--camera');
   //
@@ -72,5 +72,5 @@ window.onload = () =>{
 //       camera.setAttribute('animation', att.value);
 //   });
 //   }
-
-  };
+  // 
+  // };
