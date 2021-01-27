@@ -15,6 +15,9 @@
     const places = document.getElementsByClassName('js--place');
     const camera = document.getElementById('js--camera');
 
+    const bandje = document.getElementById('js--bandje');
+    const spuit = document.getElementById('js--spuit');
+
     let pickups = document.getElementsByClassName('js--pickup');
     let hold = null;
 
@@ -27,11 +30,21 @@
         if (hold == null) {
           alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
           hold += 1;
+<<<<<<< HEAD
+          bandje.remove();
+            alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
+=======
             this.remove();
+>>>>>>> bbad2060d63e055510ba62b1a623f47c2688ef7a
       } if (hold == 1) {
           alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
         hold += 1;
+<<<<<<< HEAD
+        spuit.remove();
+        alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
+=======
           this.remove();
+>>>>>>> bbad2060d63e055510ba62b1a623f47c2688ef7a
     } if (hold == 2) {
       hold += 1;
         alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
