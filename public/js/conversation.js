@@ -26,7 +26,7 @@ function volgendetext() {
   if (bericht == 2) {
   document.getElementById("dialoog").src = "../img/dialoog4.png";
   }
-bericht = bericht + 1
+
 }
 
 
