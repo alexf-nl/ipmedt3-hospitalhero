@@ -13,13 +13,7 @@
 
 
   //click event listener van bandje
-  document.getElementById("js--bandje").addEventListener("click", bandjealert);
 
-
-  function bandjealert(){
-    alert("Hello! I am an alert box!!");
-    document.getElementById('js--bandje').remove();
-  }
 
 
 //functie die luistert naar pickups en geeft melding.
@@ -72,5 +66,5 @@
 //       camera.setAttribute('animation', att.value);
 //   });
 //   }
-  // 
+  //
   // };
