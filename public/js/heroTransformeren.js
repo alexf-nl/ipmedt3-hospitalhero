@@ -1,6 +1,6 @@
 
 //gemaakt door alex
-console.log('punten ontvangen');
+console.log('hero transformeren');
 
 AFRAME.registerComponent("transformeren", {
   init:function() {
@@ -13,7 +13,7 @@ AFRAME.registerComponent("transformeren", {
         alert('Superheld giraaf komt eraan!');
         entity.parentNode.removeChild(entity);
         alert('Super giraffe is toegevoegd!');
-        camera.innerHTML += '<a-entity transformeren class="clickable" gesture-handler position="0 0 0" class="item" id="js--giraffe" gltf-model="#supergiraffe" scale="2 2 2"></a-entity>';
+        camera.innerHTML += '<a-entity transformeren class="clickable" gesture-handler position="0 -1 1" class="item" id="js--giraffe" gltf-model="#supergiraffe" scale="0.5 0.5 0.5"></a-entity>';
       });
 
   },
