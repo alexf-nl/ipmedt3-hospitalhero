@@ -18,21 +18,6 @@ AFRAME.registerComponent("transformeren", {
         alert('superheld komt aan!');
         document.getElementById('js--supergiraffe').object3D.visible = true
 
-        //entity.parentNode.setAttribute('gltf-model', '#supergiraffe');
-
-        //entity.parentNode.removeChild(entity);
-        //entity.setAttribute('gltf-model', '#supergiraffe');
-    //    alert('superheld komt aan!');
-
-        //entity.parentNode.appendChild(entity);
-        //entity.parentNode.removeChild(entity);
-        //entity.parentNode.setAttribute('gltf-model', '#supergiraffe');
-      //  entity1.parentNode.appendChild(entity1);
-        //test
-
-      //  element = '<a-entity class="clickable" gesture-handler position="0 0 0" class="item" id="js--supergiraffe" gltf-model="#supergiraffe" scale="1 1 1"></a-entity>';
-      //  element.appendChild(element);
-      //  element.parentNode.appendChild(element);
 
       });
 
