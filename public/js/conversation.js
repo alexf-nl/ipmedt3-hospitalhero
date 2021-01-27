@@ -10,7 +10,15 @@ let collect_bandje = 0;
 
 
 // bericht geladen 1ste bericht
-
+function hopop(){
+  document.getElementById("js--bandje").addEventListener("click", bandjealert);
+  if (collect_bandje == 1){
+    alert("HEB HET BANDJE GEVONDEN");
+  }else {
+    alert("check this");
+    hopop();
+  }
+}
 
 function volgendetext() {
   // bericht geladen 2de bericht
@@ -35,15 +43,7 @@ function volgendetext() {
 }
 
 
-function hopop(){
-  document.getElementById("js--bandje").addEventListener("click", bandjealert);
-  if (collect_bandje == 1){
-    alert("HEB HET BANDJE GEVONDEN");
-  }else {
-    alert("check this");
-    hopop();
-  }
-}
+
 
 
 
