@@ -12,7 +12,10 @@ let collect_bandje = 0;
 // bericht geladen 1ste bericht
 function bandje_loop(){
   document.getElementById("js--bandje").addEventListener("click", bandjealert);
-  bandje_loop();
+  if (collect_bandje == 1) {
+    alert("ik heb het bandje");
+  }else{bandje_loop();}
+  
 }
 
 function volgendetext() {
@@ -27,7 +30,7 @@ function new_tekst(){
   }
 }
 
-  
+
 
 
 
