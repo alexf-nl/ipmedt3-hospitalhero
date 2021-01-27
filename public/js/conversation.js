@@ -15,7 +15,6 @@ function hopop(){
   if (collect_bandje == 1){
     alert("HEB HET BANDJE GEVONDEN");
   }else {
-    alert("check this");
     hopop();
   }
 }
