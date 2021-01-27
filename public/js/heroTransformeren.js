@@ -16,9 +16,8 @@ AFRAME.registerComponent("transformeren", {
         let entity = this.el;
         entity.parentNode.removeChild(entity);
         alert('Superheld giraaf komt eraan!');
-
+        entity.parentNode.setAttribute('gltf-model', '#supergiraffe');
         //entity.parentNode.removeChild(entity);
-        superHero.setAttribute('visible', 'true');
         //entity.parentNode.setAttribute('gltf-model', '#supergiraffe');
       //  entity1.parentNode.appendChild(entity1);
         //test
