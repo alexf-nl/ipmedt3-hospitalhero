@@ -7,9 +7,8 @@ randomHero = function() {
   let randomNum = Math.floor(Math.random() * 100 + 1);
       fetch(BASE_URL + randomNum)
       .then(response => response.json())
-      .then(data => apizetten[i].setAttribute("value", "Naam hero:" + " " + data.name));
+      .then(data => apizetten[i].setAttribute("value", "Naam Superheld:" + " " + data.name));
             }
           }
-        //this.el.addEventListener("mouseenter", this.newFilm);
 
 randomHero();
