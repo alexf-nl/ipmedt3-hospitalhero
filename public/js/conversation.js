@@ -2,6 +2,7 @@ document.getElementById("dialoog").addEventListener("click", volgendetext);
 
 function volgendetext() {
   con bericht = 0
+  alert("Hello World!");
   if (bericht == 0) {
     document.getElementById("dialoog").src = "../img/dialoog2.png";
     bericht + 1
