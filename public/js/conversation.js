@@ -15,7 +15,7 @@ function bandje_loop(){
   if (collect_bandje == 1) {
     alert("ik heb het bandje");
   }else{bandje_loop();}
-  
+
 }
 
 function volgendetext() {
@@ -23,8 +23,9 @@ function volgendetext() {
   document.getElementById("dialoog").src = "../img/dialoog2.png";
   bandje_loop();
 }
+
 function new_tekst(){
-  alert("Ik ben uit de while loop");
+  alert("ik heb het bandje en ben uit de loop");
   if (collect_bandje == 1) {
     document.getElementById("dialoog").src = "../img/dialoog3.png";
   }
