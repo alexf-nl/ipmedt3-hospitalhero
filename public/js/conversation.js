@@ -16,10 +16,11 @@ function volgendetext() {
   // bericht geladen 2de bericht
   document.getElementById("dialoog").src = "../img/dialoog2.png";
   while (collect_bandje == 0){
-    alert("we zijn nu in de while loop");
-    break;
+
   }
-  if (bericht == 1) {
+  alert("Ik ben uit de while loop");
+  if (collect_bandje == 1) {
+    alert("Ik ben uit de while loop EN HEB HET BANDJE GEVONDEN");
     document.getElementById("dialoog").src = "../img/dialoog3.png";
   }
   if (bericht == 2) {
@@ -36,6 +37,6 @@ bericht = bericht + 1
 
 
 function bandjealert(){
-    alert("Hello! I am an alert box!!");
+    collect_bandje = 1;
     document.getElementById('js--bandje').remove();
 }
