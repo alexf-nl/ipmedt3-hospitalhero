@@ -25,8 +25,8 @@
     for (let i = 0; i < pickups.length; i++) {
       pickups[i].addEventListener('click', function(evt){
         if (hold == null) {
-          hold += 1;
           camera.innerHTML += '  <a-entity  class = "js--pickup js--interact" position = "0 1.25 -4"  gltf-model="#giraffe"> </a-entity>'
+          hold += 1;
           this.remove();
             alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
       }
