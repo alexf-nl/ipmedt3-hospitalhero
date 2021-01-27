@@ -26,8 +26,8 @@
       pickups[i].addEventListener('click', function(evt){
         if (hold == 0) {
           hold += 1;
+          this.remove();
             alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
-            this.remove();
       } if (hold == 1) {
         hold += 1;
         alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
