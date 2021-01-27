@@ -1,5 +1,5 @@
-// document.getElementById("giraf").addEventListener("click", verwijdergiraf);
 
-function verwijdergiraf() {
-  document.getElementById("giraf").style.display = "none";
+
+function volgendetext() {
+  document.getElementById("dialoog").src = "girraf.png";
 }
