@@ -1,4 +1,4 @@
-document.getElementById("dialoog").addEventListener("click", volgendetext);
+// document.getElementById("dialoog").addEventListener("click", volgendetext);
   const bericht = 0
 function volgendetext() {
   if (bericht == 0) {
