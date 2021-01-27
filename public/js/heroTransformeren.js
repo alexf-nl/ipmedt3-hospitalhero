@@ -7,7 +7,7 @@ console.log('hero transformeren');
 AFRAME.registerComponent("transformeren", {
   init:function() {
     const giraffe = document.getElementById('js--giraffe');
-    giraffe.setAttribute('gltf-model', '#giraffe');
+    giraffe.setAttribute('gltf-model', '');
     const superHero = document.getElementById('js--supergiraffe');
 //    entity1.removeChild(entity1);
 },
