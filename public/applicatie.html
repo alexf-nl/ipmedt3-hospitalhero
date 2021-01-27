@@ -28,7 +28,15 @@
           hold += 1;
           this.remove();
             alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
-      }
+      } if (hold == 1) {
+        hold += 2;
+        this.remove();
+          alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
+    } if (hold == 2) {
+      hold += 3;
+      this.remove();
+        alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
+  }
       });
     }
   }
