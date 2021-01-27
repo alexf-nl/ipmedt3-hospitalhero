@@ -15,6 +15,9 @@
     const places = document.getElementsByClassName('js--place');
     const camera = document.getElementById('js--camera');
 
+    const bandje = document.getElementById('js--bandje');
+    const spuit = document.getElementById('js--spuit');
+
     let pickups = document.getElementsByClassName('js--pickup');
     let hold = 0;
 
@@ -26,11 +29,11 @@
       pickups[i].addEventListener('click', function(evt){
         if (hold == 0) {
           hold += 1;
-          this.remove();
+          bandje.remove();
             alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
       } if (hold == 1) {
         hold += 1;
-        this.remove();
+        spuit.remove();
         alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
     } if (hold == 2) {
       hold += 1;
