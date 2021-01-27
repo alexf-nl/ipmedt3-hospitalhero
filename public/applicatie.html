@@ -25,12 +25,12 @@
     for (let i = 0; i < pickups.length; i++) {
       pickups[i].addEventListener('click', function(evt){
         if (hold == null) {
+          alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
           hold += 1;
-            alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
             this.remove();
       } if (hold == 1) {
-        hold += 1;
           alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
+        hold += 1;
           this.remove();
     } if (hold == 2) {
       hold += 1;
