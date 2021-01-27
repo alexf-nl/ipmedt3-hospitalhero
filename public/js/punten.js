@@ -15,7 +15,7 @@ window.onload = () =>{
   //click event listener van bandje
   document.getElementById("js--bandje").addEventListener("click", bandjealert);
 
-  alert("Hello! I am an alert box!!");
+
   function bandjealert(){
     alert("Hello! I am an alert box!!");
 
