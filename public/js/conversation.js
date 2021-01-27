@@ -15,10 +15,14 @@ let collect_bandje = 0;
 function volgendetext() {
   // bericht geladen 2de bericht
   document.getElementById("dialoog").src = "../img/dialoog2.png";
-  while (collect_bandje == 1){
-    alert("HEB HET BANDJE GEVONDEN");
+  while (collect_bandje == 0){
+    document.getElementById("js--bandje").addEventListener("click", bandjealert);
+    if (collect_bandje == 1){
+      alert("HEB HET BANDJE GEVONDEN");
+      break;
+    }
   }
-  hopop();
+  
   alert("Ik ben uit de while loop");
   if (collect_bandje == 1) {
     document.getElementById("dialoog").src = "../img/dialoog3.png";
