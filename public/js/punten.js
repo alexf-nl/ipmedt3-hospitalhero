@@ -18,6 +18,7 @@ window.onload = () =>{
 
   function bandjealert(){
     alert("Hello! I am an alert box!!");
+    document.getElementById('js--bandje').remove();
 
   }
 
