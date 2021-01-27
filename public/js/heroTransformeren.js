@@ -11,14 +11,14 @@ AFRAME.registerComponent("transformeren", {
 //    entity1.removeChild(entity1);
 },
   update:function(){
+    
     this.el.addEventListener('click', () => {
-      //  let entity = this.el;
-        this.el.setAttribute('visible', 'false');
+        let entity = this.el;
+        entity.parentNode.setAttribute('gltf-model', '-');
         //entity.parentNode.removeChild(entity);
         alert('Superheld giraaf komt eraan!');
-        superHero.parentNode.setAttribute('visible', 'true');
       //  entity.parentNode.removeChild(entity);
-      //  entity.parentNode.setAttribute('gltf-model', '#supergiraffe');
+        entity.parentNode.setAttribute('gltf-model', '#supergiraffe');
       //  entity1.parentNode.appendChild(entity1);
         //test
 
