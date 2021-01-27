@@ -9,6 +9,7 @@
   <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js" charset="utf-8"></script>
   <script src="https://raw.githack.com/fcor/arjs-gestures/master/dist/gestures.js"></script>
   <script src="js/oppakken.js"></script>
+
   <script>
   window.onload = () =>{
     const places = document.getElementsByClassName('js--place');
@@ -26,6 +27,7 @@
         if (hold == null) {
           hold = "box";
           this.remove();
+            alert('Je heeft dit object verzameld!')
       }
       });
     }
@@ -106,7 +108,7 @@
             easing="linear">
           </a-animation>
         </a-box>-->
-        <a-entity  class = "js--pickup js--interact" class="clickable" gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>
+        <a-entity class = "js--pickup js--interact"  class="clickable" gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>
         <!--<a-entity   class = "js--pickup js--interact" class="clickable"  gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>-->
 
     </a-marker>
