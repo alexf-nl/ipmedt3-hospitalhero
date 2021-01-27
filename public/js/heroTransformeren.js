@@ -3,7 +3,6 @@
 console.log('punten ontvangen');
 
 const camera = document.getElementById('js--camera');
-
 AFRAME.registerComponent("transformeren", {
   init:function() {
     const giraffe = document.getElementById('js--giraffe');
