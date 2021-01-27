@@ -2,7 +2,8 @@
 //gemaakt door alex
 console.log('hero transformeren');
 
-const camera = document.getElementById('js--camera');
+
+
 AFRAME.registerComponent("transformeren", {
   init:function() {
     const giraffe = document.getElementById('js--giraffe');
@@ -13,11 +14,11 @@ AFRAME.registerComponent("transformeren", {
         let entity = this.el;
         entity.parentNode.removeChild(entity);
         alert('Superheld giraaf komt eraan!');
-        let superHeroEntiteit = document.createElement("a-entity");
-        superHeroEntiteit.innerHTML = '<a-entity class="clickable" gesture-handler position="0 0 0" class="item" id="js--supergiraffe" gltf-model="#supergiraffe" scale=".5 .5 .5"></a-entity>';
-        superHeroEntiteit.appendChild(superHeroEntiteit);
-        scene.appendChild(superHeroEntiteit);
-
+        let sceneEl = document.querySelector('a-scene');
+        //let entityEl = document.createElement('a-entity');
+        const superHeroGiraffe = sceneEl.querySelector('#js--superHero');
+        let entity1 = '<a-entity class="clickable" gesture-handler position="0 0 0" class="item" id="js--supergiraffe" gltf-model="#supergiraffe" scale=".5 .5 .5"></a-entity>';
+        sceneEl.appendChild(superHeroGiraffe);
       });
 
   },
