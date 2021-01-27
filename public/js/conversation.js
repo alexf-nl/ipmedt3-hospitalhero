@@ -15,9 +15,9 @@ let bericht = 0;
 function volgendetext() {
   // bericht geladen 2de bericht
   document.getElementById("dialoog").src = "../img/dialoog2.png";
-  while (collect_bandje == 0){
-
-  }
+  // while (collect_bandje == 0){
+  //
+  // }
   alert("Ik ben uit de while loop");
   if (collect_bandje == 1) {
     alert("Ik ben uit de while loop EN HEB HET BANDJE GEVONDEN");
