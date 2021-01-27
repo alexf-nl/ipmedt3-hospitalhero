@@ -1,17 +1,21 @@
 document.getElementById("dialoog").addEventListener("click", volgendetext);
-  const bericht = 0
+var bericht = 0;
 function volgendetext() {
+  alert("Hello! I am an alert box!!");
   if (bericht == 0) {
     document.getElementById("dialoog").src = "../img/dialoog2.png";
-    bericht + 1
+    bericht = bericht + 1
+    alert(bericht);
   }
   if (bericht == 1) {
     document.getElementById("dialoog").src = "../img/dialoog3.png";
-    bericht + 1
+    bericht = bericht + 1\
+    alert(bericht);
   }
   if (bericht == 2) {
     document.getElementById("dialoog").src = "../img/dialoog4.png";
-    bericht + 1
+    bericht = bericht + 1
+    alert(bericht);
   }
 
 }
