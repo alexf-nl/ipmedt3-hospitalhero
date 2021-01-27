@@ -15,10 +15,10 @@ window.onload = () =>{
   //click event listener van bandje
   document.getElementById("js--bandje").addEventListener("click", bandjealert);
 
-
+  alert("Hello! I am an alert box!!");
   function bandjealert(){
-    alert('BADNJE Je heeft dit object verzameld! Dit is object van de 4!")
-    
+    alert("Hello! I am an alert box!!");
+
   }
 
 
