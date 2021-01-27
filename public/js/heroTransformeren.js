@@ -11,9 +11,10 @@ AFRAME.registerComponent("transformeren", {
   update:function(){
     this.el.addEventListener('click', () => {
         let entity = this.el;
-        alert('Superheld giraaf komt eraan!');
+        let entity1 = '<a-entity class="clickable" gesture-handler position="0 0 0" class="item" id="js--supergiraffe" gltf-model="#supergiraffe" scale=".5 .5 .5"></a-entity>';
         entity.parentNode.removeChild(entity);
-        camera.innerHTML += '<a-entity class="clickable" gesture-handler position="0 0 0" class="item" id="js--supergiraffe" gltf-model="#supergiraffe" scale=".5 .5 .5"></a-entity>';
+        alert('Superheld giraaf komt eraan!');
+        entity1.parentNode.appendChild(entity1);
       });
 
   },
