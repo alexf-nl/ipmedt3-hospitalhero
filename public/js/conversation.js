@@ -1,7 +1,6 @@
-
-
+document.getElementById("dialoog").addEventListener("click", volgendetext);
+  const bericht = 0
 function volgendetext() {
-  con bericht = 0
   if (bericht == 0) {
     document.getElementById("dialoog").src = "../img/dialoog2.png";
     bericht + 1

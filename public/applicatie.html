@@ -16,7 +16,7 @@
     const camera = document.getElementById('js--camera');
 
     let pickups = document.getElementsByClassName('js--pickup');
-    let hold = null;
+    let hold = 0;
 
     const placeholders = document.getElementsByClassName('js--placeholder');
     let scene = document.getElementById('js--scene');
@@ -24,7 +24,7 @@
   function addListeners() {
     for (let i = 0; i < pickups.length; i++) {
       pickups[i].addEventListener('click', function(evt){
-        if (hold == null) {
+        if (hold == 0) {
           alert('Je heeft dit object verzameld! Dit is object ' + hold + " van de 4!")
           hold += 1;
             this.remove();
