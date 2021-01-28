@@ -38,7 +38,7 @@ function transformation(){
     init:function() {
       let giraffe = document.getElementById('js--giraffe');
       let superHero = document.getElementById('js--supergiraffe');
-  },
+  }
     if (allesverzameld == 1){
     update:function(){
 
