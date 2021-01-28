@@ -1,8 +1,6 @@
 // start spel pas tot dat de gebruiker op tekst ballon heeft geklikt
 function uitleg_spel(){
-  alert("2");
   document.getElementById("dialoog").addEventListener("click", start_spel);
-  alert("3");
   if (0 == 1) {} else{ uitleg_spel();}
 }
 function start_spel(){
@@ -15,7 +13,7 @@ function start_spel(){
 // loop per item om te blijven zoeken tot dat ze hem hebben gevonden + tekst om actie te ondernemen
 function bandje_loop(){
   document.getElementById("dialoog").src = "../img/1steopzoeknaardeband.png";
-  document.getElementById("js--bandje").addEventListener("click", bandje_collect;
+  document.getElementById("js--bandje").addEventListener("click", bandje_collect);
   if (0 == 1) {} else{ bandje_loop();}
 }
 function watjes_loop(){
@@ -47,4 +45,3 @@ function spuit_collect(){
 }
 
 uitleg_spel();
-alert("1");
