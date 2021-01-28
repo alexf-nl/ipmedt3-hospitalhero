@@ -42,7 +42,7 @@ function giraf2_loop(){
   if (0 == 1) {} else{ giraf2_loop();}
 }
 function laast(){
-  document.getElementById("dialoog").addEventListener("click", open("/eindscherm.html"));
+  document.getElementById("dialoog").addEventListener("click", window.open("/eindscherm.html"));
 }
 
 
