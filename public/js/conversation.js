@@ -32,7 +32,7 @@ function pleister_loop(){
 }
 function giraf_loop(){
   document.getElementById("dialoog").src = "../img/eennalaatstebericht.png";
-  waardetransformatie = waardetransformatie + 1;
+
   document.getElementById("dialoog").addEventListener("click", giraf2_loop);
   if (0 == 1) {} else{ giraf_loop();}
 }
@@ -46,7 +46,7 @@ function laast(){
 }
 
 
-let waardetransformatie = 0;
+
 //delete element and compliment tekst voor gebruiker
 function bandje_collect(){
     document.getElementById('js--bandje').remove();
@@ -72,7 +72,7 @@ AFRAME.registerComponent("transformeren", {
     let superHero = document.getElementById('js--supergiraffe');
 },
   update:function(){
-    if (waardetransformatie == 1){
+
     this.el.addEventListener('click', () => {
       //giraffe.setAttribute('visible', 'false');
         let entity = this.el;
@@ -83,7 +83,7 @@ AFRAME.registerComponent("transformeren", {
         document.getElementById('js--supergiraffe').object3D.visible = true
 
 
-      });}
+      });
 
   },
   tick:function(){
