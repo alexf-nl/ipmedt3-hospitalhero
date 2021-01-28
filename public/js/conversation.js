@@ -38,7 +38,7 @@ function giraf_loop(){
 }
 function giraf2_loop(){
   document.getElementById("dialoog").src = "../img/laatstebericht.png";
-  document.getElementById("dialoog").addEventListener("click", giraf2_loop);
+  document.getElementById("dialoog").addEventListener("click",laast);
   if (0 == 1) {} else{ giraf2_loop();}
 }
 function laast(){
