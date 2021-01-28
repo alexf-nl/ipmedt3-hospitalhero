@@ -1,6 +1,6 @@
 // start spel pas tot dat de gebruiker op tekst ballon heeft geklikt
 function uitleg_spel(){
-  document.getElementById("dialoog").addEventListener("click", start_spel;
+  document.getElementById("dialoog").addEventListener("click", start_spel;)
   if (0 == 1) {} else{ uitleg_spel();}
 }
 function start_spel(){
