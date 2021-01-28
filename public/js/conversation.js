@@ -28,7 +28,7 @@ function spuit_loop(){
 }
 function pleister_loop(){
   document.getElementById("dialoog").src = "../img/1steopzoeknaardepleister.png";
-  document.getElementById("js--pleister").addEventListener("click", spuit_pleister);
+  document.getElementById("js--pleister").addEventListener("click", pleister_collect);
   if (0 == 1) {} else{ pleister_loop();}
 }
 
