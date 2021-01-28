@@ -33,6 +33,7 @@ function pleister_loop(){
 }
 
 let allesverzameld = 0;
+
 function transformation(){
   AFRAME.registerComponent("transformeren", {
     init:function() {
@@ -45,15 +46,15 @@ function transformation(){
       alert('1');
       this.el.addEventListener('click', () => {
         //giraffe.setAttribute('visible', 'false');
-        if(allesverzameld == 1){
+        //if(allesverzameld == 1){
 
           let entity = this.el;
           entity.parentNode.removeAttribute('gltf-model');
           alert('superheld komt aan!');
           document.getElementById('js--supergiraffe').object3D.visible = true
-        }else{
-          alert('HET IS GELUKT');
-        }
+      //  }//else{
+      //    alert('HET IS GELUKT');
+    //    }
 
         });
 
@@ -84,7 +85,9 @@ function spuit_collect(){
 function pleister_collect(){
     document.getElementById('js--pleister').remove();
     allesverzameld = allesverzameld + 1;
+    if(allesverzameld == 1) {
     transformation();
+  }
 }
 
 uitleg_spel();
