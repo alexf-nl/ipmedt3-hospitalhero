@@ -14,11 +14,14 @@ body {
       grid-template-columns: repeat(12, minmax(0,1fr));
       grid-column-gap: 2rem;
       grid-row-gap: 2rem;
-      width: 100%;
       padding: 3rem;
       margin: 0;
     }
 }
+img {
+	width: 100%;
+}
+
 
 section {
 
@@ -42,6 +45,7 @@ section {
 .item-card {
   display: grid;
     width: 380px;
+		height: 17rem;
     position: relative;
     box-shadow: 0 2px 7px #dfdfdf;
     margin: 50px auto;
