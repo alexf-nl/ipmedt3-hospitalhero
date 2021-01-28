@@ -63,7 +63,7 @@ sceneEl.addEventListener("markerLost", (e) => {
 
 //alex f - functie om een blender model te kunnen roteren en schalen binnen AR
 
-/*
+
 
 handleScale(event) {
     if (isMarkerVisible) {
@@ -79,5 +79,3 @@ handleScale(event) {
       el.object3D.scale.z = scaleFactor * initialScale.z;
     }
   }
-
-*/
