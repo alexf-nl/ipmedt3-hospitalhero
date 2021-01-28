@@ -26,8 +26,6 @@ function watjes_loop(){
 
 
 function volgendetext() {
-
-
   bandje_loop();
 }
 
