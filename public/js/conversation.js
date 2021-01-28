@@ -36,7 +36,7 @@ let allesverzameld = 0;
 function scan_giraf(){
   document.getElementById("js--giraffe").addEventListener("click", transformation);
 
-  if (0 == 1) {} else{ transformation();}
+  if (0 == 1) {} else{ scan_giraf();}
 }
 
 
