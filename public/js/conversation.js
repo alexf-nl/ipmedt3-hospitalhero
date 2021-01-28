@@ -1,8 +1,7 @@
 // start spel pas tot dat de gebruiker op tekst ballon heeft geklikt
-function uitleg_spel(){
+
   document.getElementById("dialoog").addEventListener("click", start_spel);
-  if (0 == 1) {} else{ uitleg_spel();}
-}
+
 function start_spel(){
   document.getElementById("dialoog").src = "../img/2stebericht.png";
   document.getElementById("dialoog").addEventListener("click", bandje_loop);
@@ -34,31 +33,10 @@ function pleister_loop(){
 
 let allesverzameld = 0;
 
-function transformation(){
-  AFRAME.registerComponent("transformeren", {
-    init:function() {
-      let giraffe = document.getElementById('js--giraffe');
-      let superHero = document.getElementById('js--supergiraffe');
-  },
+function scan_giraf(){
+  document.getElementById("js--giraffe").addEventListener("click", transformation);
 
-    update:function(){
-      this.el.addEventListener('click', () => {
-          let entity = this.el;
-          entity.parentNode.removeAttribute('gltf-model');
-          alert('superheld komt aan!');
-          document.getElementById('js--supergiraffe').object3D.visible = true
-
-
-        });
-
-    },
-    tick:function(){
-    },
-    pause:function(){},
-    play:function(){}
-  });
-
-  if (0 == 1) {} else{ pleister_loop();}
+  if (0 == 1) {} else{ transformation();}
 }
 
 
@@ -77,8 +55,33 @@ function spuit_collect(){
 }
 function pleister_collect(){
     document.getElementById('js--pleister').remove();
-    transformation();
+    scan_giraf();
 
 }
 
-uitleg_spel();
+
+function transformation(){
+  AFRAME.registerComponent("transformeren", {
+    init:function() {
+      let giraffe = document.getElementById('js--giraffe');
+      let superHero = document.getElementById('js--supergiraffe');
+      alert('2');
+  },
+
+    update:function(){
+      this.el.addEventListener('click', () => {
+          let entity = this.el;
+          entity.parentNode.removeAttribute('gltf-model');
+          alert('superheld komt aan!');
+          document.getElementById('js--supergiraffe').object3D.visible = true
+
+
+        });
+
+    },
+    tick:function(){
+    },
+    pause:function(){},
+    play:function(){}
+  });
+}
