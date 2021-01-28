@@ -33,6 +33,34 @@ function pleister_loop(){
 }
 
 
+function transformation(){
+  AFRAME.registerComponent("transformeren", {
+    init:function() {
+      let giraffe = document.getElementById('js--giraffe');
+      let superHero = document.getElementById('js--supergiraffe');
+  },
+    update:function(){
+
+      this.el.addEventListener('click', () => {
+        //giraffe.setAttribute('visible', 'false');
+          let entity = this.el;
+          entity.parentNode.removeAttribute('gltf-model');
+          alert('superheld komt aan!');
+          document.getElementById('js--supergiraffe').object3D.visible = true
+
+
+        });
+
+    },
+    tick:function(){
+    },
+    pause:function(){},
+    play:function(){}
+  });
+
+  if (0 == 1) {} else{ pleister_loop();}
+}
+
 
 //delete element and compliment tekst voor gebruiker
 function bandje_collect(){
@@ -49,7 +77,7 @@ function spuit_collect(){
 }
 function pleister_collect(){
     document.getElementById('js--pleister').remove();
-    //next bericht/funtie
+    transformation();
 }
 
 uitleg_spel();
