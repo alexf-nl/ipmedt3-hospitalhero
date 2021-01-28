@@ -68,8 +68,7 @@ function pleister_collect(){
 
 AFRAME.registerComponent("transformeren", {
   init:function() {
-    let giraffe = document.getElementById('js--giraffe1');
-
+    let giraffe = document.getElementById('js--giraffe');
     let superHero = document.getElementById('js--supergiraffe');
 },
   update:function(){
@@ -79,7 +78,8 @@ AFRAME.registerComponent("transformeren", {
         let entity = this.el;
         entity.parentNode.removeAttribute('gltf-model');
         alert('SUPER goed geholpen. NU HEB IK SUPERKRACHTEN!!!! ');
-       document.getElementById('js--supergiraffe').object3D.visible = true;
+        document.getElementById('js--supergiraffe').object3D.visible = true
+
 
       });
 
