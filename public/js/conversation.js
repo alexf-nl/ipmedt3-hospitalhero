@@ -23,10 +23,14 @@ function watjes_loop(){
 }
 function spuit_loop(){
   document.getElementById("dialoog").src = "../img/1steopzoeknaardespuit.png";
-  document.getElementById("js--spuit").addEventListener("click", watjes_collect);
+  document.getElementById("js--spuit").addEventListener("click", spuit_collect);
   if (0 == 1) {} else{ spuit_loop();}
 }
-
+function pleister_loop(){
+  document.getElementById("dialoog").src = "../img/1steopzoeknaardepleister.png";
+  document.getElementById("js--pleister").addEventListener("click", spuit_pleister);
+  if (0 == 1) {} else{ pleister_loop();}
+}
 
 
 
@@ -41,6 +45,10 @@ function watjes_collect(){
 }
 function spuit_collect(){
     document.getElementById('js--spuit').remove();
+    pleister_loop();
+}
+function pleister_collect(){
+    document.getElementById('js--pleister').remove();
     //next bericht/funtie
 }
 
