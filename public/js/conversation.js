@@ -9,7 +9,7 @@ function start_spel(){
   if (0 == 1) {} else{ start_spel();}
 }
 
-let allesverzameld = 0;
+
 // loop per item om te blijven zoeken tot dat ze hem hebben gevonden + tekst om actie te ondernemen
 function bandje_loop(){
   document.getElementById("dialoog").src = "../img/1steopzoeknaardeband.png";
@@ -32,7 +32,7 @@ function pleister_loop(){
   if (0 == 1) {} else{ pleister_loop();}
 }
 
-
+let allesverzameld = 0;
 function transformation(){
   AFRAME.registerComponent("transformeren", {
     init:function() {
@@ -50,7 +50,9 @@ function transformation(){
 
 
         });
-        }
+      } else {
+        alert('Nee klopt ik ben niet in de functie');
+      }
     },
     tick:function(){
     },
@@ -77,8 +79,8 @@ function spuit_collect(){
 }
 function pleister_collect(){
     document.getElementById('js--pleister').remove();
+    
     transformation();
-    allesverzameld = allesverzameld + 1;
 }
 
 uitleg_spel();
