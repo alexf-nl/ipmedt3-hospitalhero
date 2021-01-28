@@ -46,6 +46,7 @@ function transformation(){
       this.el.addEventListener('click', () => {
         //giraffe.setAttribute('visible', 'false');
         if(allesverzameld == 1){
+          alert(allesverzameld);
           let entity = this.el;
           entity.parentNode.removeAttribute('gltf-model');
           alert('superheld komt aan!');
