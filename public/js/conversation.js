@@ -76,8 +76,7 @@ AFRAME.registerComponent("transformeren", {
     this.el.addEventListener('click', () => {
       //giraffe.setAttribute('visible', 'false');
         let entity = this.el;
-        //entity.parentNode.removeAttribute('gltf-model')
-        entity.panrentNode.removeChild(entity);
+        entity.parentNode.removeAttribute('gltf-model')
         alert('SUPER goed geholpen. NU HEB IK SUPERKRACHTEN!!!! ');
         document.getElementById('js--supergiraffe').object3D.visible = true
 
