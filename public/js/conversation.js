@@ -38,21 +38,25 @@ function transformation(){
     init:function() {
       let giraffe = document.getElementById('js--giraffe');
       let superHero = document.getElementById('js--supergiraffe');
-  }
-    if (allesverzameld == 1){
+  },
+
     update:function(){
 
+      alert('1');
       this.el.addEventListener('click', () => {
         //giraffe.setAttribute('visible', 'false');
+        if(allesverzameld == 1){
           let entity = this.el;
           entity.parentNode.removeAttribute('gltf-model');
           alert('superheld komt aan!');
           document.getElementById('js--supergiraffe').object3D.visible = true
-
+        }else{
+          alert('HET IS GELUKT');
+        }
 
         });
 
-    }},
+    },
     tick:function(){
     },
     pause:function(){},
