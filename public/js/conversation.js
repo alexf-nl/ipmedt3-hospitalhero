@@ -42,7 +42,7 @@ function giraf2_loop(){
   if (0 == 1) {} else{ giraf2_loop();}
 }
 function laast(){
-  document.getElementById("dialoog").addEventListener("click", open("/eindscherm.html"));
+  document.getElementById("dialoog").addEventListener("click", window.open("/eindscherm.html"));
 }
 
 
@@ -77,7 +77,7 @@ AFRAME.registerComponent("transformeren", {
       //giraffe.setAttribute('visible', 'false');
         let entity = this.el;
         entity.parentNode.removeAttribute('gltf-model');
-        alert('superheld komt aan!');
+        alert('SUPER goed geholpen. NU HEB IK SUPERKRACHTEN!!!! ');
         document.getElementById('js--supergiraffe').object3D.visible = true
 
 
