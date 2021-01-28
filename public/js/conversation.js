@@ -34,10 +34,12 @@ function pleister_loop(){
 let allesverzameld = 0;
 
 function transformation(){
+  alert('1');
   AFRAME.registerComponent("transformeren", {
     init:function() {
       let giraffe = document.getElementById('js--giraffe');
       let superHero = document.getElementById('js--supergiraffe');
+      alert('2');
   },
 
     update:function(){
