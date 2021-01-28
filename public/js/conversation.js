@@ -9,21 +9,25 @@ let collect_bandje = 0;
 
 
 function start_spel(){
-  document.getElementById("dialoog").addEventListener("click", volgendetext);
+  document.getElementById("dialoog").addEventListener("click", bandje_loop);
   if (0 == 1) {} else{ start_spel();}
 }
 // bericht geladen 1ste bericht
 function bandje_loop(){
+  document.getElementById("dialoog").src = "../img/dialoog2.png";
   document.getElementById("js--bandje").addEventListener("click", bandjealert);
   if (0 == 1) {} else{ bandje_loop();}
+}
+function watjes_loop(){
+  document.getElementById("js--bandje").addEventListener("click", bandjealert);
+  if (0 == 1) {} else{ watjes_loop();}
 }
 
 
 
-
 function volgendetext() {
-  // bericht geladen 2de bericht
-  document.getElementById("dialoog").src = "../img/dialoog2.png";
+
+
   bandje_loop();
 }
 
