@@ -78,7 +78,6 @@ AFRAME.registerComponent("transformeren", {
         let entity = this.el;
         //entity.parentNode.removeAttribute('gltf-model')
         entity.panrentNode.removeChild(entity);
-
         alert('SUPER goed geholpen. NU HEB IK SUPERKRACHTEN!!!! ');
         document.getElementById('js--supergiraffe').object3D.visible = true
 
