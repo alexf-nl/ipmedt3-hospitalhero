@@ -42,25 +42,12 @@ function transformation(){
   },
 
     update:function(){
-
-      alert('1');
       this.el.addEventListener('click', () => {
-        //giraffe.setAttribute('visible', 'false');
-<<<<<<< HEAD
-=======
-        //if(allesverzameld == 1){
-
->>>>>>> d973d7d3a6abac20d353706241752488bab77687
           let entity = this.el;
           entity.parentNode.removeAttribute('gltf-model');
           alert('superheld komt aan!');
           document.getElementById('js--supergiraffe').object3D.visible = true
-<<<<<<< HEAD
-=======
-      //  }//else{
-      //    alert('HET IS GELUKT');
-    //    }
->>>>>>> d973d7d3a6abac20d353706241752488bab77687
+
 
         });
 
@@ -90,10 +77,8 @@ function spuit_collect(){
 }
 function pleister_collect(){
     document.getElementById('js--pleister').remove();
-    allesverzameld = allesverzameld + 1;
-    if(allesverzameld == 1) {
     transformation();
-  }
+
 }
 
 uitleg_spel();
