@@ -30,14 +30,17 @@ function pleister_loop(){
   document.getElementById("js--pleister").addEventListener("click", pleister_collect);
   if (0 == 1) {} else{ pleister_loop();}
 }
-
-let allesverzameld = 0;
-
-function scan_giraf(){
-  document.getElementById("js--giraffe").addEventListener("click", transformation);
-
-  if (0 == 1) {} else{ scan_giraf();}
+function giraf_loop(){
+  document.getElementById("dialoog").src = "../img/eennalaatstebericht.png";
+  document.getElementById("dialoog").addEventListener("click", giraf2_loop);
+  if (0 == 1) {} else{ giraf_loop();}
 }
+function giraf2_loop(){
+  document.getElementById("dialoog").src = "../img/laatstebericht.png";
+  // document.getElementById("dialoog").addEventListener("click", pleister_collect);
+  if (0 == 1) {} else{ giraf2_loop();}
+}
+
 
 
 //delete element and compliment tekst voor gebruiker
@@ -55,33 +58,6 @@ function spuit_collect(){
 }
 function pleister_collect(){
     document.getElementById('js--pleister').remove();
-    scan_giraf();
+    giraf_loop();
 
-}
-
-
-function transformation(){
-  AFRAME.registerComponent("transformeren", {
-    init:function() {
-      let giraffe = document.getElementById('js--giraffe');
-      let superHero = document.getElementById('js--supergiraffe');
-      alert('2');
-  },
-
-    update:function(){
-      this.el.addEventListener('click', () => {
-          let entity = this.el;
-          entity.parentNode.removeAttribute('gltf-model');
-          alert('superheld komt aan!');
-          document.getElementById('js--supergiraffe').object3D.visible = true
-
-
-        });
-
-    },
-    tick:function(){
-    },
-    pause:function(){},
-    play:function(){}
-  });
 }
