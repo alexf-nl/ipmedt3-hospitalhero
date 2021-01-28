@@ -52,9 +52,7 @@ function transformation(){
 
         });
 
-    },} else {
-      alert('Nee klopt ik ben niet in de functie');
-    };
+    }},
     tick:function(){
     },
     pause:function(){},
