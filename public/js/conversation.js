@@ -1,7 +1,7 @@
 // elements click eventes all blender models
 
-document.getElementById("js--spuit").addEventListener("click", bandjealert);
-document.getElementById("js--giraffe").addEventListener("click", bandjealert);
+// document.getElementById("js--spuit").addEventListener("click", bandjealert);
+// document.getElementById("js--giraffe").addEventListener("click", bandjealert);
 
 document.getElementById("dialoog").addEventListener("click", volgendetext);
 
@@ -28,7 +28,6 @@ function volgendetext() {
 }
 
 function new_tekst(){
-  
   if (collect_bandje == 1) {
     document.getElementById("dialoog").src = "../img/dialoog3.png";
   }
