@@ -1,8 +1,7 @@
 // start spel pas tot dat de gebruiker op tekst ballon heeft geklikt
-function uitleg_spel(){
+
   document.getElementById("dialoog").addEventListener("click", start_spel);
-  if (0 == 1) {} else{ uitleg_spel();}
-}
+
 function start_spel(){
   document.getElementById("dialoog").src = "../img/2stebericht.png";
   document.getElementById("dialoog").addEventListener("click", bandje_loop);
@@ -80,5 +79,3 @@ function pleister_collect(){
     transformation();
 
 }
-
-uitleg_spel();
