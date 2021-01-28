@@ -45,4 +45,4 @@ function spuit_collect(){
     //next bericht/funtie
 }
 
-start_spel();
+uitleg_spel();
