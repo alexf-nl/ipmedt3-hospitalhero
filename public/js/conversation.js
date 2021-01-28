@@ -25,21 +25,10 @@ function watjes_loop(){
 
 
 
-function volgendetext() {
-  bandje_loop();
-}
-
-function new_tekst(){
-  if (collect_bandje == 1) {
-    // bericht geladen 3de bericht
-    document.getElementById("dialoog").src = "../img/dialoog3.png";
-  }
-}
 function bandjealert(){
     collect_bandje = collect_bandje + 1;
     document.getElementById('js--bandje').remove();
-    new_tekst();
-
+    document.getElementById("dialoog").src = "../img/dialoog3.png";
 }
 
 
