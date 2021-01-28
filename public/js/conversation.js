@@ -68,7 +68,7 @@ function pleister_collect(){
 
 AFRAME.registerComponent("transformeren", {
   init:function() {
-    let giraffe = document.getElementById('js--giraffe');
+    let giraffe = document.getElementById('js--giraffe1');
     let superHero = document.getElementById('js--supergiraffe');
 },
   update:function(){
