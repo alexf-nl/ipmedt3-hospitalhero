@@ -19,13 +19,13 @@
   gesture-detector
   id="scene">
       <a-assets>
-        <a-asset-item id="zuster" src="models/zusterblederdaniek.glb"></a-asset-item>
-        <a-asset-item id="bandje" src="models/bandje.glb"></a-asset-item>
-        <a-asset-item id="spuit" src="models/spuit.glb"></a-asset-item>
-        <a-asset-item id="watje" src="models/watje.glb"></a-asset-item>
-        <a-asset-item id="pleister" src="models/pleister.glb"></a-asset-item>
-        <a-asset-item id="giraffe" src="models/giraffe.glb"></a-asset-item>
-        <a-asset-item id="supergiraffe" src="models/held2.glb"></a-asset-item>
+        <a-asset-item id="bandje" src="assets/bandje.glb"></a-asset-item>
+        <a-asset-item id="spuit" src="assets/spuit.glb"></a-asset-item>
+        <a-asset-item id="watje" src="assets/watjes.glb"></a-asset-item>
+        <a-asset-item id="pleister" src="assets/pleister.glb"></a-asset-item>
+        <a-asset-item id="giraffe" src="assets/giraffe.glb"></a-asset-item>
+        <a-asset-item id="supergiraffe" src="assets/giraffe_superheld.glb"></a-asset-item>
+        <a-asset-item id="bandgiraffe" src="assets/giraffe_band.glb"></a-asset-item>
 
       <img id="bandjeText" src="img/bandje.png">
 
@@ -89,7 +89,7 @@
 
     <!--super hero -->
     <a-marker type="pattern" url="markers/pattern-superhero.patt">
-      <a-entity transformeren visible="true" class="clickable" gesture-handler position="0 0 0" class="item" id="js--giraffe" gltf-model="#giraffe" scale="1 1 1"></a-entity>
+      <a-entity transformeren visible="true" class="clickable" gesture-handler position="0 0 0" class="item" id="js--giraffe" gltf-model="#bandgiraffe" scale="1 1 1"></a-entity>
       <a-entity transformeren visible="false" class="clickable" gesture-handler position="0 0 0" class="item" id="js--supergiraffe" gltf-model="#supergiraffe" scale="1 1 1"></a-entity>
 
     </a-marker>
