@@ -76,10 +76,12 @@ AFRAME.registerComponent("transformeren", {
     this.el.addEventListener('click', () => {
       //giraffe.setAttribute('visible', 'false');
         let entity = this.el;
-        entity.parentNode.removeAttribute('gltf-model')
-        alert('SUPER goed geholpen. NU HEB IK SUPERKRACHTEN!!!! ');
-        document.getElementById('js--supergiraffe').object3D.visible = true
+        entity.parentNode.removeAttribute('gltf-model');
+        giraffe.object3D.visible = false;
 
+        alert('SUPER goed geholpen. NU HEB IK SUPERKRACHTEN!!!! ');
+      //  document.getElementById('js--supergiraffe').object3D.visible = true
+      superHero.object3D.visible = true;
 
       });
 
