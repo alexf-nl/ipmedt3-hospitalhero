@@ -9,7 +9,7 @@ function start_spel(){
   if (0 == 1) {} else{ start_spel();}
 }
 
-
+let allesverzameld = 0;
 // loop per item om te blijven zoeken tot dat ze hem hebben gevonden + tekst om actie te ondernemen
 function bandje_loop(){
   document.getElementById("dialoog").src = "../img/1steopzoeknaardeband.png";
@@ -40,7 +40,7 @@ function transformation(){
       let superHero = document.getElementById('js--supergiraffe');
   },
     update:function(){
-
+      if (allesverzameld == 1){
       this.el.addEventListener('click', () => {
         //giraffe.setAttribute('visible', 'false');
           let entity = this.el;
@@ -50,7 +50,7 @@ function transformation(){
 
 
         });
-
+        }
     },
     tick:function(){
     },
@@ -78,6 +78,7 @@ function spuit_collect(){
 function pleister_collect(){
     document.getElementById('js--pleister').remove();
     transformation();
+    allesverzameld = allesverzameld + 1;
 }
 
 uitleg_spel();
