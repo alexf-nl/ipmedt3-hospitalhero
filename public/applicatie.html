@@ -23,7 +23,7 @@
         <a-asset-item id="bandje" src="models/bandje.glb"></a-asset-item>
         <a-asset-item id="spuit" src="models/spuit.glb"></a-asset-item>
         <a-asset-item id="giraffe" src="models/giraffe.glb"></a-asset-item>
-        <a-asset-item id="supergiraffe" src="models/super_giraffe.glb"></a-asset-item>
+        <a-asset-item id="supergiraffe" src="models/superheld.glb"></a-asset-item>
 
       <img id="bandjeText" src="img/bandje.png">
 
@@ -46,16 +46,8 @@
   <!-- stuwband -->
 
     <a-marker type="pattern" url="stuwband.patt">
-          <!--  <a-box position="0 0.5 0" material="color:red;">
-            <a-animation attribute="rotation"
-            dur="3000"
-            to="360 360 0"
-            repeat="indefinite"
-            easing="linear">
-          </a-animation>
-        </a-box>-->
+
         <a-entity class = "js--pickup js--interact"  class="clickable" gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>
-        <!--<a-entity   class = "js--pickup js--interact" class="clickable"  gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="1 1 1"></a-entity>-->
 
     </a-marker>
 
