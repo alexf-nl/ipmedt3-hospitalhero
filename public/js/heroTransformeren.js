@@ -3,7 +3,7 @@
 console.log('hero transformeren');
 
 
-
+/*
 AFRAME.registerComponent("transformeren", {
   init:function() {
     let giraffe = document.getElementById('js--giraffe');
@@ -27,3 +27,4 @@ AFRAME.registerComponent("transformeren", {
   pause:function(){},
   play:function(){}
 });
+*/
