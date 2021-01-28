@@ -1,6 +1,7 @@
 // start spel pas tot dat de gebruiker op tekst ballon heeft geklikt
 function uitleg_spel(){
   document.getElementById("dialoog").addEventListener("click", start_spel;);
+  alert("Hello! I am an alert box!!");
   if (0 == 1) {} else{ uitleg_spel();}
 }
 function start_spel(){
@@ -35,7 +36,6 @@ function bandje_collect(){
     document.getElementById('js--bandje').remove();
     watjes_loop();
 }
-
 function watjes_collect(){
     document.getElementById('js--watje').remove();
     spuit_loop()
