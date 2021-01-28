@@ -33,8 +33,34 @@ function pleister_loop(){
 
 let allesverzameld = 0;
 
+function scan_giraf(){
+  document.getElementById("js--giraffe").addEventListener("click", transformation);
+
+  if (0 == 1) {} else{ transformation();}
+}
+
+
+//delete element and compliment tekst voor gebruiker
+function bandje_collect(){
+    document.getElementById('js--bandje').remove();
+    watjes_loop();
+}
+function watjes_collect(){
+    document.getElementById('js--watje').remove();
+    spuit_loop()
+}
+function spuit_collect(){
+    document.getElementById('js--spuit').remove();
+    pleister_loop();
+}
+function pleister_collect(){
+    document.getElementById('js--pleister').remove();
+    scan_giraf();
+
+}
+
+
 function transformation(){
-  alert('1');
   AFRAME.registerComponent("transformeren", {
     init:function() {
       let giraffe = document.getElementById('js--giraffe');
@@ -58,26 +84,4 @@ function transformation(){
     pause:function(){},
     play:function(){}
   });
-
-  if (0 == 1) {} else{ transformation();}
-}
-
-
-//delete element and compliment tekst voor gebruiker
-function bandje_collect(){
-    document.getElementById('js--bandje').remove();
-    watjes_loop();
-}
-function watjes_collect(){
-    document.getElementById('js--watje').remove();
-    spuit_loop()
-}
-function spuit_collect(){
-    document.getElementById('js--spuit').remove();
-    pleister_loop();
-}
-function pleister_collect(){
-    document.getElementById('js--pleister').remove();
-    transformation();
-
 }
