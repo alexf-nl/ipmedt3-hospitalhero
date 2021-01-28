@@ -39,3 +39,7 @@ function bandjealert(){
     new_tekst();
 
 }
+
+
+
+start_spel();
