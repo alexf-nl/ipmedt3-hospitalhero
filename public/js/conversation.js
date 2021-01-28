@@ -59,7 +59,7 @@ function transformation(){
     play:function(){}
   });
 
-  if (0 == 1) {} else{ pleister_loop();}
+  if (0 == 1) {} else{ transformation();}
 }
 
 
