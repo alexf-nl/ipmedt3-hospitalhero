@@ -39,8 +39,9 @@ function transformation(){
       let giraffe = document.getElementById('js--giraffe');
       let superHero = document.getElementById('js--supergiraffe');
   },
+    if (allesverzameld == 1){
     update:function(){
-      if (allesverzameld == 1){
+
       this.el.addEventListener('click', () => {
         //giraffe.setAttribute('visible', 'false');
           let entity = this.el;
@@ -50,10 +51,10 @@ function transformation(){
 
 
         });
-      } else {
-        alert('Nee klopt ik ben niet in de functie');
-      }
-    },
+
+    },} else {
+      alert('Nee klopt ik ben niet in de functie');
+    };
     tick:function(){
     },
     pause:function(){},
@@ -79,7 +80,7 @@ function spuit_collect(){
 }
 function pleister_collect(){
     document.getElementById('js--pleister').remove();
-    
+
     transformation();
 }
 
