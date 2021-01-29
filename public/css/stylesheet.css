@@ -7,6 +7,9 @@ body {
 	background-position: center;
 
 }
+p, h2, h1 {
+	font-family: 'Roboto', sans-serif;
+}
 
 @supports (display: grid) {
     .mainEind {
@@ -14,7 +17,6 @@ body {
       grid-template-columns: repeat(12, minmax(0,1fr));
       grid-column-gap: 2rem;
       grid-row-gap: 2rem;
-      padding: 3rem;
       margin: 0;
     }
 }
@@ -39,12 +41,12 @@ section {
   display: grid;
   grid-template-columns: repeat(1,minmax(0,1fr));
       grid-template-rows: repeat(2, minmax(0,1fr));
-      grid-column: 1 / 12;
+      grid-column: 1 / 13;
 }
 
 .item-card {
   display: grid;
-    width: 380px;
+    width: 100%;
 		height: 17rem;
     position: relative;
     box-shadow: 0 2px 7px #dfdfdf;
