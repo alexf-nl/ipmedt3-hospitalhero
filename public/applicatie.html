@@ -24,8 +24,9 @@
         <a-asset-item id="watje" src="assets/watjes.glb"></a-asset-item>
         <a-asset-item id="pleister" src="assets/pleister.glb"></a-asset-item>
         <a-asset-item id="giraffe" src="assets/giraffe.glb"></a-asset-item>
-        <a-asset-item id="supergiraffe" src="assets/giraffe_superheld.glb"></a-asset-item>
-        <a-asset-item id="bandgiraffe" src="assets/giraffeOmgedraaid1.glb"></a-asset-item>
+        <a-asset-item id="supergiraffe" src="assets/supergiraffe5.glb"></a-asset-item>
+
+        <a-asset-item id="bandgiraffe" src="assets/giraffeOmgedraaid3.glb"></a-asset-item>
 
       <img id="bandjeText" src="img/bandje.png">
 
@@ -48,7 +49,7 @@
 
   <!-- stuwband -->
 
-    <a-marker type="pattern" url="stuwband.patt">
+    <a-marker type="pattern" url="markers/stuwband.patt">
 
         <a-entity class = "js--pickup js--interact"  class="clickable" gesture-handler tooninfo position="0 0 0" id="js--bandje" gltf-model="#bandje" scale="0.5 0.5 0.5" rotation="0 0 0"></a-entity>
 
@@ -56,7 +57,7 @@
 
     <!-- watjes -->
 
-      <a-marker type="pattern" url="watje.patt">
+      <a-marker type="pattern" url="markers/watje.patt">
 
           <a-entity class = "js--pickup js--interact"  class="clickable" gesture-handler tooninfo position="0 0 0" id="js--watje" gltf-model="#watje" scale="0.2 0.2 0.2" rotation="0 0 0"></a-entity>
 
@@ -64,7 +65,7 @@
 
       <!-- pleister -->
 
-        <a-marker type="pattern" url="pleister.patt">
+        <a-marker type="pattern" url="markers/pleister.patt">
 
             <a-entity class = "js--pickup js--interact"  class="clickable" gesture-handler tooninfo position="0 0 0" id="js--pleister" gltf-model="#pleister" scale="0.3 0.3 0.3" rotation="0 0 0"></a-entity>
 
@@ -79,7 +80,7 @@
     </a-marker>
 -->
     <!-- prik spuit-->
-    <a-marker type="pattern" url="prik.patt">
+    <a-marker type="pattern" url="markers/prik.patt">
 
       <a-entity  class = "js--pickup js--interact" class="clickable" gesture-handler position="0 0 0" class="item" id="js--spuit" gltf-model="#spuit" scale="0.2 0.2 0.2" rotation="0 0 0"></a-entity>
 
@@ -94,7 +95,7 @@
       <a-entity transformeren visible="false" class="clickable" gesture-handler position="0 0 0" class="item" id="js--supergiraffe" gltf-model="#supergiraffe" scale="2 2 2" rotation="180 0 0"></a-entity>
     </a-marker>
   -->
-    <a-marker type="pattern" url="giraffe2.patt">
+    <a-marker type="pattern" url="markers/giraffe2.patt">
       <a-entity transformeren visible="true" class="clickable" gesture-handler position="0 0 0" class="item" id="js--giraffe1" gltf-model="#bandgiraffe" scale="1 1 1" rotation="0 0 0"></a-entity>
       <a-entity transformeren visible="false" class="clickable" gesture-handler position="0 0 0" class="item" id="js--supergiraffe" gltf-model="#supergiraffe" scale="1 1 1" rotation="0 0 0"></a-entity>
 
