@@ -18,7 +18,7 @@ cursor.appendChild(box);
 
 //functie om te kunnen teleporten naar een ander object
 //gemaakt door alex f
-console.log('hi');
+// console.log('hi');
 /*AFRAME.registerComponent("tooninfo", {
   init:function() {
     const zuster = document.getElementById("js--zuster");

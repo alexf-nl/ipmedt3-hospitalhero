@@ -1,5 +1,5 @@
 //gemaakt door alex
-console.log('punten ontvangen');
+// console.log('punten ontvangen');
 
 AFRAME.registerComponent("beloningpunten", {
   init:function() {
