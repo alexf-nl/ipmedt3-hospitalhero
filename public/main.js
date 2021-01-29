@@ -49,33 +49,33 @@ console.log('hi');
 
 */
 
-sceneEl.addEventListener("markerFound", (e) => {
-    isMarkerVisible = true;
-    console.log(isMarkerVisible);
-
-});
-
-sceneEl.addEventListener("markerLost", (e) => {
-    isMarkerVisible = false;
-    console.log(isMarkerVisible);
-});
-
-
-//alex f - functie om een blender model te kunnen roteren en schalen binnen AR
-
-
-
-handleScale(event) {
-    if (isMarkerVisible) {
-      this.scaleFactor *=  1 + event.detail.spreadChange / event.detail.startSpread;
-
-      this.scaleFactor = Math.min(
-        Math.max(this.scaleFactor, this.data.minScale),
-        this.data.maxScale
-      );
-
-      el.object3D.scale.x = scaleFactor * initialScale.x;
-      el.object3D.scale.y = scaleFactor * initialScale.y;
-      el.object3D.scale.z = scaleFactor * initialScale.z;
-    }
-  }
+// sceneEl.addEventListener("markerFound", (e) => {
+//     isMarkerVisible = true;
+//     console.log(isMarkerVisible);
+//
+// });
+//
+// sceneEl.addEventListener("markerLost", (e) => {
+//     isMarkerVisible = false;
+//     console.log(isMarkerVisible);
+// });
+//
+//
+// //alex f - functie om een blender model te kunnen roteren en schalen binnen AR
+//
+//
+//
+// handleScale(event) {
+//     if (isMarkerVisible) {
+//       this.scaleFactor *=  1 + event.detail.spreadChange / event.detail.startSpread;
+//
+//       this.scaleFactor = Math.min(
+//         Math.max(this.scaleFactor, this.data.minScale),
+//         this.data.maxScale
+//       );
+//
+//       el.object3D.scale.x = scaleFactor * initialScale.x;
+//       el.object3D.scale.y = scaleFactor * initialScale.y;
+//       el.object3D.scale.z = scaleFactor * initialScale.z;
+//     }
+//   }
