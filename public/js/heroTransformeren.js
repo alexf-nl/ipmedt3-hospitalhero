@@ -1,6 +1,6 @@
 
 //gemaakt door alex
-console.log('hero transformeren');
+// console.log('hero transformeren');
 
 
 /*
